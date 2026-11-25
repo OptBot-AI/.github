@@ -11,7 +11,7 @@
 <!-- /optbot:gifs -->
 </p>
 
-### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-clipboard.gif" height="32" align="absmiddle" alt=""> Repositories
+### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/icons/optbot-clipboard.gif" height="32" align="absmiddle" alt=""> Repositories
 
 | Repository | What it is |
 |---|---|
@@ -20,7 +20,7 @@
 | **website** | optbotai.com |
 | **design-system** | The OPTBOT brand: tokens, logo, robots, reactions and the Claude skill |
 
-### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-wave.gif" height="32" align="absmiddle" alt=""> New here?
+### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/icons/optbot-wave.gif" height="32" align="absmiddle" alt=""> New here?
 
 Start with [onboarding](https://github.com/OptBot-AI/.github/blob/main/ONBOARDING.md) (or tell Claude *"onboard me to OPTBOT"*), then the [engineering standards](https://github.com/OptBot-AI/.github/blob/main/STANDARDS.md).
 
