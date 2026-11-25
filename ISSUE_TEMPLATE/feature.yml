@@ -1,0 +1,20 @@
+name: Feature or improvement
+description: Something new, or something better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: Who needs this and why. Start from the problem, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: How we will know it's finished.

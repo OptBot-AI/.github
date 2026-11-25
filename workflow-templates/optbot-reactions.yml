@@ -1,0 +1,32 @@
+# OPTBOT reactions: the robot reacts to new issues, new pull requests and merges,
+# so the brand shows up in every repository. Copy to .github/workflows/.
+name: OPTBOT reactions
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened, closed]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  react:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const base = "https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions";
+            const pr = context.payload.pull_request;
+            let gif, line;
+            if (context.eventName === "issues") { gif = "eyes"; line = "Looking into it."; }
+            else if (pr && context.payload.action === "opened") { gif = "on-it"; line = "Thanks! A code owner will review this."; }
+            else if (pr && pr.merged) { gif = "ship-it"; line = "Merged. Shipped."; }
+            else return;
+            const number = (pr || context.payload.issue).number;
+            await github.rest.issues.createComment({ ...context.repo, issue_number: number,
+              body: `<img src="${base}/optbot-${gif}.gif" height="64" alt="${gif}"> ${line}` });
