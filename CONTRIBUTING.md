@@ -1,7 +1,7 @@
 # Contributing
 
 The OPTBOT engineering standards live in the organization's
-[`.github` repository](https://github.com/OPTBOTAI/.github/blob/main/STANDARDS.md).
+[`.github` repository](https://github.com/OptBot-AI/.github/blob/main/STANDARDS.md).
 The short version:
 
 1. **Branch from `main`** (or `develop` where the repo has one): `feat/<topic>`,

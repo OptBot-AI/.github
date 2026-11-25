@@ -20,7 +20,7 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: |
-            const base = "https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions";
+            const base = "https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions";
             const pr = context.payload.pull_request;
             let gif, line;
             if (context.eventName === "issues") { gif = "eyes"; line = "Looking into it."; }

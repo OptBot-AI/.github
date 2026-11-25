@@ -1,6 +1,6 @@
 # OPTBOT engineering standards
 
-How every OPTBOT repository, account and contribution looks. Short on purpose; follow it exactly.
+How every OPTBOT repository, account and contribution looks. Short on purpose; follow it exactly. New members start with [ONBOARDING.md](ONBOARDING.md).
 
 ## 1. Names
 
@@ -8,6 +8,7 @@ How every OPTBOT repository, account and contribution looks. Short on purpose; f
 |---|---|---|
 | GitHub username | `firstname-lastname-optbot` | `griffin-thompson-optbot` |
 | Display name | Real name | Griffin Thompson |
+| Profile picture | One of the official OPTBOT robots ([ONBOARDING.md](ONBOARDING.md#2-profile-picture-pick-one-of-the-official-optbot-robots)) | `optbot-avatar-wave` |
 | Commit email | Your @optbotai.com address, verified | griffin@optbotai.com |
 | Repository | lowercase, hyphens, a noun | `design-system`, `superhead` |
 | Branch | `<type>/<short-topic>` with type `feat`, `fix`, `docs`, `chore`, `research` | `feat/kitchen-supply-pack` |
@@ -41,23 +42,23 @@ We react with our own robot. In comments, reviews and Slack, use the OPTBOT reac
 
 | | Name | Means | Paste |
 |---|---|---|---|
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-bug.gif" height="40"> | `bug` | Something broke | `![bug](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-bug.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-chart.gif" height="40"> | `chart` | The numbers are up | `![chart](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-chart.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-coffee.gif" height="40"> | `coffee` | Taking a break | `![coffee](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-coffee.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-eyes.gif" height="40"> | `eyes` | Looking into it | `![eyes](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-eyes.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-facepalm.gif" height="40"> | `facepalm` | Oops | `![facepalm](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-facepalm.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-hockey.gif" height="40"> | `hockey` | CIN, hockey | `![hockey](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-hockey.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-idea.gif" height="40"> | `idea` | Good idea | `![idea](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-idea.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-laugh.gif" height="40"> | `laugh` | That's funny | `![laugh](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-laugh.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-love.gif" height="40"> | `love` | Love it | `![love](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-love.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-on-it.gif" height="40"> | `on-it` | Working on it | `![on-it](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-on-it.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-party.gif" height="40"> | `party` | Celebrate a win | `![party](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-party.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-ship-it.gif" height="40"> | `ship-it` | Done, merged, shipped | `![ship-it](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-ship-it.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-shrug.gif" height="40"> | `shrug` | Not sure, need data | `![shrug](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-shrug.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-thinking.gif" height="40"> | `thinking` | Thinking about it | `![thinking](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-thinking.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-thumbs-up.gif" height="40"> | `thumbs-up` | Approve, looks good | `![thumbs-up](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-thumbs-up.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-trophy.gif" height="40"> | `trophy` | A result or milestone | `![trophy](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-trophy.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-waiting.gif" height="40"> | `waiting` | Blocked, waiting | `![waiting](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-waiting.gif)` |
-| <img src="https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-wave.gif" height="40"> | `wave` | Hello | `![wave](https://raw.githubusercontent.com/OPTBOT-AI/.github/main/assets/reactions/optbot-wave.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-bug.gif" height="40"> | `bug` | Something broke | `![bug](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-bug.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-chart.gif" height="40"> | `chart` | The numbers are up | `![chart](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-chart.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-coffee.gif" height="40"> | `coffee` | Taking a break | `![coffee](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-coffee.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-eyes.gif" height="40"> | `eyes` | Looking into it | `![eyes](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-eyes.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-facepalm.gif" height="40"> | `facepalm` | Oops | `![facepalm](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-facepalm.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-hockey.gif" height="40"> | `hockey` | CIN, hockey | `![hockey](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-hockey.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-idea.gif" height="40"> | `idea` | Good idea | `![idea](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-idea.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-laugh.gif" height="40"> | `laugh` | That's funny | `![laugh](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-laugh.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-love.gif" height="40"> | `love` | Love it | `![love](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-love.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-on-it.gif" height="40"> | `on-it` | Working on it | `![on-it](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-on-it.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-party.gif" height="40"> | `party` | Celebrate a win | `![party](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-party.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-ship-it.gif" height="40"> | `ship-it` | Done, merged, shipped | `![ship-it](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-ship-it.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-shrug.gif" height="40"> | `shrug` | Not sure, need data | `![shrug](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-shrug.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-thinking.gif" height="40"> | `thinking` | Thinking about it | `![thinking](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-thinking.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-thumbs-up.gif" height="40"> | `thumbs-up` | Approve, looks good | `![thumbs-up](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-thumbs-up.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-trophy.gif" height="40"> | `trophy` | A result or milestone | `![trophy](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-trophy.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-waiting.gif" height="40"> | `waiting` | Blocked, waiting | `![waiting](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-waiting.gif)` |
+| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-wave.gif" height="40"> | `wave` | Hello | `![wave](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-wave.gif)` |
 
 Tip: save the ones you use most as **saved replies** (GitHub → Settings → Saved replies), so they're two keystrokes away. Brand rules for everything else: the `design-system` repository.
