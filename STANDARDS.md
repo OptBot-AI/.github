@@ -38,7 +38,7 @@ The company name is always **OPTBOT**, in capitals. The product is **OPTBOT Core
 
 ## 5. Culture: OPTBOT reactions, not emoji
 
-We react with our own robot, everywhere. Every robot is pure white on black; no other colors.
+We react with our own robot, everywhere. Every robot is the white frame and black face on a transparent background: no black squares, no other colors.
 
 **Where they live**
 

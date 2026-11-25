@@ -11,7 +11,7 @@ Assets (public, no sign-in needed):
 - Pictures: `https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/avatars/optbot-avatar-<name>.png` (list: `assets/avatars/index.json`)
 - Reactions: `.../assets/reactions/optbot-<name>.gif` (24); GIF library: `.../assets/gifs/optbot-<name>.gif` (list: `assets/gifs/index.json`)
 
-Identity rule: the robot is always white frame, black face, white eyes on night. No orange or any other color. The CEO edition is reserved for the CEO: never offer it to anyone else.
+Identity rule: the robot is always white frame, black face, white eyes, on a transparent background (never a black square). No orange or any other color. The CEO edition is reserved for the CEO: never offer it to anyone else.
 
 ## Two modes
 

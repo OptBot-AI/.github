@@ -1,5 +1,5 @@
 {
-  "rule": "outline robot, white on night, square, looping",
+  "rule": "outline robot: white frame, black face, transparent background with a thin night edge, square, looping",
   "size": 240,
   "categories": {
     "Faces": [
