@@ -103,5 +103,33 @@
       "read",
       "sort"
     ]
-  }
+  },
+  "showcase": [
+    "gifs/launch",
+    "gifs/golf-swing",
+    "gifs/hockey",
+    "gifs/hockey-celly",
+    "reactions/ping-pong",
+    "reactions/chef",
+    "gifs/basketball",
+    "gifs/skate",
+    "gifs/gym",
+    "gifs/trophy",
+    "gifs/guitar",
+    "gifs/soccer",
+    "gifs/tennis",
+    "gifs/golf-putt",
+    "gifs/chart",
+    "gifs/idea",
+    "gifs/detective",
+    "gifs/music",
+    "gifs/balloon",
+    "reactions/party",
+    "reactions/basketball",
+    "gifs/dance",
+    "gifs/flip",
+    "gifs/jump",
+    "gifs/shades",
+    "gifs/grad"
+  ]
 }

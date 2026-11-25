@@ -5,11 +5,11 @@
 
 <p align="center">
 <!-- optbot:gifs -->
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-heart-eyes.gif" height="88" alt="heart-eyes" title="heart-eyes">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-cap.gif" height="88" alt="cap" title="cap">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-wink.gif" height="88" alt="wink" title="wink">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-laptop.gif" height="88" alt="laptop" title="laptop">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-side-eye.gif" height="88" alt="side-eye" title="side-eye">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-hockey.gif" height="96" alt="hockey" title="hockey">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-launch.gif" height="96" alt="launch" title="launch">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-chart.gif" height="96" alt="chart" title="chart">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-ping-pong.gif" height="96" alt="ping-pong" title="ping-pong">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-golf-swing.gif" height="96" alt="golf-swing" title="golf-swing">
 <!-- /optbot:gifs -->
 </p>
 
