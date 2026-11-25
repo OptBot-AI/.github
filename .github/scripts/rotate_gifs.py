@@ -5,9 +5,10 @@ import json, random, re, sys, urllib.request
 RAW = "https://raw.githubusercontent.com/OptBot-AI/.github/main/assets"
 idx = json.load(urllib.request.urlopen(f"{RAW}/gifs/index.json"))
 pool = idx.get("showcase") or [f"gifs/{n}" for v in idx["categories"].values() for n in v]
-path, count, height = sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 5, sys.argv[3] if len(sys.argv) > 3 else "96"
-pick = random.sample(pool, count)
-row = "\n".join(f'<img src="{RAW}/{p.split("/")[0]}/optbot-{p.split("/")[1]}.gif" height="{height}" alt="{p.split("/")[1]}" title="{p.split("/")[1]}">' for p in pick)
+path, count, height = sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 5, sys.argv[3] if len(sys.argv) > 3 else "110"
+RENAME = {"gifs/chef": "chef-hat", "gifs/basketball": "ball-spin"}   # names in assets/tight/
+names = [RENAME.get(p, p.split("/")[1]) for p in random.sample(pool, count)]
+row = "\n".join(f'<img src="{RAW}/tight/optbot-{n}.gif" height="{height}" alt="{n}" title="{n}">' for n in names)
 text = open(path).read()
 assert "<!-- optbot:gifs -->" in text, "no markers"
 open(path, "w").write(re.sub(r"(<!-- optbot:gifs -->).*?(<!-- /optbot:gifs -->)", lambda m: f"{m[1]}\n{row}\n{m[2]}", text, flags=re.S))

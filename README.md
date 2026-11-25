@@ -22,4 +22,4 @@ This repository is public so GitHub can show the profile and serve the images. N
 
 <!-- optbot:footer -->
 <br>
-<p align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-wave.gif" height="40" alt=""><br><sub><b>OPTBOT</b> · <a href="https://www.optbotai.com">optbotai.com</a> · Proprietary and confidential</sub></p>
+<p align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-wave.gif" height="48" alt=""><br><sub><b>OPTBOT</b> · <a href="https://www.optbotai.com">optbotai.com</a> · Proprietary and confidential</sub></p>
