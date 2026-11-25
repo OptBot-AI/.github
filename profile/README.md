@@ -13,12 +13,12 @@
 
 ### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-clipboard.gif" height="28" alt=""> Repositories
 
-| | Repository | What it is |
-|---|---|---|
-| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-chart.gif" height="28" alt=""> | **superhead** | One model, many heads, trained from labeled business data: the OPTBOT Core engine |
-| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-hockey.gif" height="28" alt=""> | **cin** | The Causal Intervention Network for hockey player portability |
-| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-launch.gif" height="28" alt=""> | **website** | optbotai.com |
-| <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-party-hat.gif" height="28" alt=""> | **design-system** | The OPTBOT brand: tokens, logo, robots, reactions and the Claude skill |
+| Repository | What it is |
+|---|---|
+| **superhead** | One model, many heads, trained from labeled business data: the OPTBOT Core engine |
+| **cin** | The Causal Intervention Network for hockey player portability |
+| **website** | optbotai.com |
+| **design-system** | The OPTBOT brand: tokens, logo, robots, reactions and the Claude skill |
 
 ### <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-wave.gif" height="28" alt=""> New here?
 
