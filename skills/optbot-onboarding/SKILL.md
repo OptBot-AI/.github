@@ -1,6 +1,6 @@
 ---
 name: optbot-onboarding
-description: Use when someone says "onboard me to OPTBOT", "onboard <name>", or a new OPTBOT teammate needs GitHub, Slack, profile picture, reactions or Claude set up the OPTBOT way.
+description: Use when someone says "onboard me to OPTBOT" or "onboard Jane Doe", or a new OPTBOT teammate needs GitHub, Slack, profile picture, reactions or Claude set up the OPTBOT way.
 ---
 
 # OPTBOT onboarding
