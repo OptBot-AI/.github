@@ -1,0 +1,17 @@
+[
+  {"name": "bug", "color": "ff9a8a", "description": "Something is broken"},
+  {"name": "feature", "color": "86dfa9", "description": "New capability"},
+  {"name": "improvement", "color": "c9f0d8", "description": "Better version of something that works"},
+  {"name": "docs", "color": "9a9aa6", "description": "Documentation only"},
+  {"name": "research", "color": "f1f1f3", "description": "Experiments, papers, analysis"},
+  {"name": "design", "color": "f1f1f3", "description": "Brand, UI, robots, emoji"},
+  {"name": "chore", "color": "36363e", "description": "Maintenance, cleanup, tooling"},
+  {"name": "ci", "color": "36363e", "description": "Workflows, checks, automation"},
+  {"name": "dependencies", "color": "9a9aa6", "description": "Dependency updates (Dependabot)"},
+  {"name": "security", "color": "ff9a8a", "description": "Security issue or hardening"},
+  {"name": "priority: high", "color": "ff9a8a", "description": "Do this first"},
+  {"name": "priority: low", "color": "9a9aa6", "description": "When there is time"},
+  {"name": "blocked", "color": "25252b", "description": "Waiting on someone or something"},
+  {"name": "good first issue", "color": "86dfa9", "description": "Small and well defined: a good start"},
+  {"name": "question", "color": "9a9aa6", "description": "Needs an answer, not code"}
+]

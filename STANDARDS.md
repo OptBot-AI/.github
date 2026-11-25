@@ -132,3 +132,13 @@ We react with our own robot, everywhere. Every robot is the white frame and blac
 **Slack statuses:** see [ONBOARDING.md](ONBOARDING.md#5-slack-status).
 
 Brand rules for everything else: the `design-system` repository.
+
+## 6. Automation every repository has
+
+| What | How |
+|---|---|
+| **OPTBOT bot** | `.github/workflows/optbot-reactions.yml`: GIF reactions to issues, PRs, reviews, merges and commits, `/optbot <name>` |
+| **Labels** | `.github/workflows/labels.yml` keeps the standard set from `.github/labels.json` (bug, feature, improvement, docs, research, design, chore, ci, dependencies, security, priority, blocked, good first issue, question) |
+| **Dependabot** | `.github/dependabot.yml`: weekly grouped updates for every package ecosystem and for GitHub Actions; security alerts and fixes on for the whole org |
+| **Releases** | Push a tag `vMAJOR.MINOR.PATCH`; `.github/workflows/release.yml` publishes the release with notes grouped by label (`.github/release.yml`) |
+| **Slack** | The GitHub app posts PRs, issues, reviews and releases to `#feed-github`, and CI on `main` to `#feed-deploys` |

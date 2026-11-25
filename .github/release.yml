@@ -1,0 +1,18 @@
+# How GitHub groups automatic release notes (used by the OPTBOT release workflow).
+changelog:
+  exclude:
+    labels: [chore, ci]
+    authors: [dependabot, github-actions]
+  categories:
+    - title: New
+      labels: [feature]
+    - title: Better
+      labels: [improvement, design]
+    - title: Fixed
+      labels: [bug, security]
+    - title: Research
+      labels: [research]
+    - title: Docs
+      labels: [docs]
+    - title: Other changes
+      labels: ["*"]
