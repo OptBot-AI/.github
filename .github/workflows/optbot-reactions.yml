@@ -35,7 +35,11 @@ jobs:
               changes:      [["thinking", "A few changes first."], ["side-eye", "Almost. See the review."], ["detective", "Found a few things."]],
               merged:       [["ship-it", "Merged. Shipped."], ["party", "Merged!"], ["golf", "Merged. Right down the middle."], ["hockey-celly", "Merged. Goal!"], ["basketball", "Merged. Nothing but net."], ["skate", "Merged and rolling."]],
             };
-            const p = context.payload, ev = context.eventName, repo = context.repo;
+            const p = context.payload, repo = context.repo;
+            let ev = context.eventName;   // inside a called workflow this can read "workflow_call": work it out from the payload
+            if (!["issues", "pull_request", "pull_request_target", "pull_request_review", "push", "issue_comment"].includes(ev))
+              ev = p.review ? "pull_request_review" : p.comment ? "issue_comment" : p.pull_request ? "pull_request_target" : p.issue ? "issues" : p.head_commit ? "push" : ev;
+            core.info(`OPTBOT bot: event ${context.eventName} -> ${ev}, action ${p.action || "-"}`);
             const quiet = s => /\[skip optbot\]/i.test(s || "");
             const comment = (n, [g, line]) => github.rest.issues.createComment({ ...repo, issue_number: n, body: card(g, line) });
 
