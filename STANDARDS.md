@@ -78,7 +78,7 @@ We react with our own robot, everywhere. Every robot is pure white on black; no 
 | <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-basketball.gif" height="44"> | `basketball` | Nailed it | `:optbot-basketball:` | `![basketball](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-basketball.gif)` |
 | <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-gym.gif" height="44"> | `gym` | Putting in the work | `:optbot-gym:` | `![gym](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-gym.gif)` |
 
-**The GIF library** (one per profile picture, plus Max's classics, 82 in all). In Slack: `:optbot-<name>:` (two renamed to avoid clashes: `:optbot-chef-hat:`, `:optbot-ball-spin:`). In markdown: `![name](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-<name>.gif)`.
+**The GIF library** (one per profile picture, status robots for Slack, and Max's classics: 87 in all). In Slack: `:optbot-<name>:` (two renamed to avoid clashes: `:optbot-chef-hat:`, `:optbot-ball-spin:`). In markdown: `![name](https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-<name>.gif)`.
 
 **Faces**
 
@@ -112,6 +112,12 @@ We react with our own robot, everywhere. Every robot is pure white on black; no 
 
 <table>
 <tr><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-wave.gif" width="64" alt="wave"><br><code>wave</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-thumbs-up.gif" width="64" alt="thumbs-up"><br><code>thumbs-up</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-guitar.gif" width="64" alt="guitar"><br><code>guitar</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-gamer.gif" width="64" alt="gamer"><br><code>gamer</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-zen.gif" width="64" alt="zen"><br><code>zen</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-balloon.gif" width="64" alt="balloon"><br><code>balloon</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-love.gif" width="64" alt="love"><br><code>love</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-music.gif" width="64" alt="music"><br><code>music</code></td></tr>
+</table>
+
+**Status**
+
+<table>
+<tr><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-meeting.gif" width="64" alt="meeting"><br><code>meeting</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-recharge.gif" width="64" alt="recharge"><br><code>recharge</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-remote.gif" width="64" alt="remote"><br><code>remote</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-sick.gif" width="64" alt="sick"><br><code>sick</code></td><td align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-vacation.gif" width="64" alt="vacation"><br><code>vacation</code></td></tr>
 </table>
 
 **Classics**

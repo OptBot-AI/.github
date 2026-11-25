@@ -73,18 +73,22 @@ The full list is in [STANDARDS.md](STANDARDS.md#5-culture-optbot-reactions-not-e
 
 Use an OPTBOT status so everyone reads the same signals:
 
+These are also the workspace's suggested statuses in Slack, so they show up when you click your status.
+
 | Status | Emoji |
 |---|---|
 | Heads down | `:optbot-on-it:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-on-it.gif" height="28"> |
+| In a meeting | `:optbot-meeting:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-meeting.gif" height="28"> |
 | On a call | `:optbot-support:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-support.gif" height="28"> |
 | On a break | `:optbot-coffee:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-coffee.gif" height="28"> |
 | Lunch | `:optbot-chef:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-chef.gif" height="28"> |
 | Focus time | `:optbot-zen:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-zen.gif" height="28"> |
+| Working remotely | `:optbot-remote:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-remote.gif" height="28"> |
 | Commuting | `:optbot-walk:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-walk.gif" height="28"> |
-| Researching | `:optbot-eyes:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-eyes.gif" height="28"> |
-| Shipping | `:optbot-ship-it:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-ship-it.gif" height="28"> |
-| At the rink | `:optbot-hockey:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-hockey.gif" height="28"> |
+| Out sick | `:optbot-sick:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-sick.gif" height="28"> |
+| Vacation | `:optbot-vacation:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-vacation.gif" height="28"> |
 | Out of office | `:optbot-golf:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-golf.gif" height="28"> |
+| Recharging | `:optbot-recharge:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-recharge.gif" height="28"> |
 | Offline | `:optbot-sleep:` <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/reactions/optbot-sleep.gif" height="28"> |
 
 ## 6. Claude
