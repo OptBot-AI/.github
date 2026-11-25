@@ -28,12 +28,12 @@ jobs:
             const pick = a => a[Math.floor(Math.random() * a.length)];
             const card = (n, line) => `<img src="${url(n)}" height="96" alt="optbot ${n}"> ${line}`;
             const POOLS = {
-              issueOpened:  [["eyes", "Looking into it."], ["thinking", "Thinking about it."], ["detective", "On the case."], ["focused", "Locked in."]],
-              issueClosed:  [["trophy", "Closed. Nice work."], ["party", "Done!"], ["thumbs-up", "Closed."], ["crown", "Closed like a king."]],
-              prOpened:     [["on-it", "Thanks! A code owner will review this."], ["coffee", "Grabbing a coffee and a look."], ["support", "On it. A code owner will review."], ["headphones", "Headphones on. Reviewing soon."]],
-              approved:     [["thumbs-up", "Approved."], ["love", "Love it. Approved."], ["heart-eyes", "Beautiful. Approved."], ["star-eyes", "Star work. Approved."]],
-              changes:      [["thinking", "A few changes first."], ["side-eye", "Almost. See the review."], ["detective", "Found a few things."]],
-              merged:       [["ship-it", "Merged. Shipped."], ["party", "Merged!"], ["golf", "Merged. Right down the middle."], ["hockey-celly", "Merged. Goal!"], ["basketball", "Merged. Nothing but net."], ["skate", "Merged and rolling."]],
+              issueOpened:  [["eyes", "Looking into it."], ["thinking", "Thinking about it."], ["detective", "On the case."], ["focused", "Locked in."], ["clipboard", "Logged. On the list."], ["coffee", "Grabbing a coffee and a look."]],
+              issueClosed:  [["trophy", "Closed. Nice work."], ["party", "Done!"], ["success", "Closed."], ["crown", "Closed like a king."], ["hockey-celly", "Closed. Goal!"], ["golf-putt", "Closed. Sunk the putt."]],
+              prOpened:     [["on-it", "Thanks! A code owner will review this."], ["chef", "Something's cooking. Review coming."], ["support", "On it. A code owner will review."], ["headphones", "Headphones on. Reviewing soon."], ["gamer", "Game on. Review coming."], ["ping-pong", "Your serve. A code owner will review."]],
+              approved:     [["thumbs-up", "Approved."], ["love", "Love it. Approved."], ["heart-eyes", "Beautiful. Approved."], ["star-eyes", "Star work. Approved."], ["shades", "Smooth. Approved."], ["crown", "Approved, your majesty."]],
+              changes:      [["thinking", "A few changes first."], ["side-eye", "Almost. See the review."], ["detective", "Found a few things."], ["facepalm", "Close. See the notes."]],
+              merged:       [["ship-it", "Merged. Shipped."], ["party", "Merged!"], ["golf", "Merged. Right down the middle."], ["hockey-celly", "Merged. Goal!"], ["basketball", "Merged. Nothing but net."], ["skate", "Merged and rolling."], ["trophy", "Merged. Trophy."], ["guitar", "Merged. Encore!"], ["gym", "Merged. Heavy lift."], ["launch", "Merged. Liftoff."]],
             };
             const p = context.payload, repo = context.repo;
             let ev = context.eventName;   // inside a called workflow this can read "workflow_call": work it out from the payload
@@ -60,14 +60,18 @@ jobs:
             }
             if (ev === "push") {
               const c = p.head_commit; if (!c || quiet(c.message) || p.deleted) return;
-              const g = pick(GIFS);
+              const SHOW = ["launch", "golf-swing", "hockey", "hockey-celly", "basketball", "skate", "gym", "trophy", "guitar", "soccer", "tennis", "golf-putt", "chart", "idea", "detective", "music", "balloon", "dance", "flip", "jump", "shades", "grad", "ping-pong", "chef", "party"];
+              const g = pick(SHOW);
               return github.rest.repos.createCommitComment({ ...repo, commit_sha: c.id,
                 body: card(g, `Landed on \`${p.ref.replace("refs/heads/", "")}\`. Today's robot: **${g}**.`) });
             }
             if (ev === "issue_comment" && p.action === "created") {
-              if (p.comment.user.type === "Bot") return;
-              const m = (p.comment.body || "").trim().match(/^\/optbot\s+([a-z-]+)/i); if (!m) return;
-              let n = m[1].toLowerCase();
+              if (p.comment.user.type === "Bot" || /\[bot\]$/.test(p.comment.user.login)) return;
+              const text = (p.comment.body || "").replace(/[\u200b-\u200d\ufeff]/g, "");
+              core.info(`comment by ${p.comment.user.login}: ${JSON.stringify(text.slice(0, 80))}`);
+              const m = text.match(/(?:^|\s)\/?optbot(?:\s+|-)([a-z][a-z-]*)|(?:^|\s)\/optbot\s*$/im); if (!m) return;
+              let n = (m[1] || "random").toLowerCase();
+              if (n === "help") n = "list";
               if (n === "list") return github.rest.issues.createComment({ ...repo, issue_number: p.issue.number,
                 body: "**OPTBOT reactions:** " + REACTIONS.map(x => "`" + x + "`").join(" ") + "\n\n**OPTBOT GIFs:** " + GIFS.map(x => "`" + x + "`").join(" ") + "\n\nUse `/optbot <name>` or `/optbot random`." });
               if (n === "random") n = pick([...REACTIONS, ...GIFS]);
