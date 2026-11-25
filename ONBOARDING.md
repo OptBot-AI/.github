@@ -64,7 +64,7 @@ The CEO edition (shades and a tie) is reserved for the CEO.
 We never use stock emoji when an OPTBOT robot fits.
 
 - **Slack:** every robot is a workspace emoji named `:optbot-<name>:` and works as a reaction. Type `:optbot` in the reaction picker to see them all; your favorites float to the top.
-- **GitHub saved replies:** add the reactions as saved replies (Claude does it for you during onboarding), titled `optbot <name>`. In any comment box press **Ctrl + .** (Cmd + . on Mac), type the name, Enter.
+- **GitHub saved replies:** add the reactions as saved replies (Claude adds all 66 for you during onboarding), titled `optbot <name>`. In any comment box press **Ctrl + .** (Cmd + . on Mac), type the name, Enter.
 - **GitHub bot:** comment `/optbot <name>`, `/optbot random` or `/optbot list` on any issue or PR in an OPTBOT repository and the robot replies. It also reacts on its own to new issues, pull requests, reviews, merges and commits to `main`. Add `[skip optbot]` to keep it quiet.
 
 The full list is in [STANDARDS.md](STANDARDS.md#5-culture-optbot-reactions-not-emoji).
