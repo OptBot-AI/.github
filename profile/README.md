@@ -4,10 +4,13 @@
 <a href="https://www.optbotai.com">optbotai.com</a></p>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/robot/optbot-body-read-on-dark.gif" height="88" alt="reading">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/robot/optbot-body-typing-on-dark.gif" height="88" alt="typing">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/robot/optbot-body-chart-on-dark.gif" height="88" alt="results">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/robot/optbot-body-hockey-on-dark.gif" height="88" alt="hockey">
+<!-- optbot:gifs -->
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-heart-eyes.gif" height="88" alt="heart-eyes" title="heart-eyes">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-cap.gif" height="88" alt="cap" title="cap">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-wink.gif" height="88" alt="wink" title="wink">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-laptop.gif" height="88" alt="laptop" title="laptop">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-side-eye.gif" height="88" alt="side-eye" title="side-eye">
+<!-- /optbot:gifs -->
 </p>
 
 | Repository | What it is |

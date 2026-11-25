@@ -1,0 +1,216 @@
+{
+  "rule": "outline robot only: white frame, black face, white eyes, white props, on night",
+  "size": 512,
+  "categories": {
+    "Faces": [
+      {
+        "name": "classic",
+        "title": "The standard OPTBOT"
+      },
+      {
+        "name": "blink",
+        "title": "Mid-blink"
+      },
+      {
+        "name": "wink",
+        "title": "Wink"
+      },
+      {
+        "name": "happy",
+        "title": "Happy"
+      },
+      {
+        "name": "side-eye",
+        "title": "Side-eye"
+      },
+      {
+        "name": "focused",
+        "title": "Locked in"
+      },
+      {
+        "name": "shades",
+        "title": "Shades on"
+      },
+      {
+        "name": "heart-eyes",
+        "title": "Heart eyes"
+      },
+      {
+        "name": "star-eyes",
+        "title": "Starstruck"
+      },
+      {
+        "name": "dizzy",
+        "title": "Dizzy"
+      },
+      {
+        "name": "sleepy",
+        "title": "Sleepy"
+      }
+    ],
+    "Headwear": [
+      {
+        "name": "cap",
+        "title": "Ball cap"
+      },
+      {
+        "name": "beanie",
+        "title": "Beanie"
+      },
+      {
+        "name": "crown",
+        "title": "Crown"
+      },
+      {
+        "name": "top-hat",
+        "title": "Top hat"
+      },
+      {
+        "name": "headphones",
+        "title": "Headphones"
+      },
+      {
+        "name": "chef",
+        "title": "Chef"
+      },
+      {
+        "name": "party-hat",
+        "title": "Party hat"
+      },
+      {
+        "name": "wizard",
+        "title": "Wizard"
+      },
+      {
+        "name": "grad",
+        "title": "Graduate"
+      },
+      {
+        "name": "halo",
+        "title": "Angel"
+      },
+      {
+        "name": "antenna",
+        "title": "Antenna"
+      },
+      {
+        "name": "cowboy",
+        "title": "Cowboy"
+      }
+    ],
+    "Sports": [
+      {
+        "name": "hockey",
+        "title": "Hockey: puck on the stick"
+      },
+      {
+        "name": "hockey-celly",
+        "title": "Hockey: goal celly"
+      },
+      {
+        "name": "golf-swing",
+        "title": "Golf: the drive"
+      },
+      {
+        "name": "golf-putt",
+        "title": "Golf: the putt"
+      },
+      {
+        "name": "basketball",
+        "title": "Ball on a finger"
+      },
+      {
+        "name": "soccer",
+        "title": "Soccer"
+      },
+      {
+        "name": "tennis",
+        "title": "Tennis"
+      },
+      {
+        "name": "gym",
+        "title": "Lifting"
+      },
+      {
+        "name": "skate",
+        "title": "Skateboard"
+      },
+      {
+        "name": "trophy",
+        "title": "Champion"
+      }
+    ],
+    "Work": [
+      {
+        "name": "laptop",
+        "title": "Heads down"
+      },
+      {
+        "name": "coffee",
+        "title": "Coffee first"
+      },
+      {
+        "name": "chart",
+        "title": "Up and to the right"
+      },
+      {
+        "name": "detective",
+        "title": "Looking into it"
+      },
+      {
+        "name": "idea",
+        "title": "Idea"
+      },
+      {
+        "name": "launch",
+        "title": "Ship it"
+      },
+      {
+        "name": "support",
+        "title": "On a call"
+      },
+      {
+        "name": "clipboard",
+        "title": "Checklist"
+      },
+      {
+        "name": "briefcase",
+        "title": "Business trip"
+      }
+    ],
+    "Fun": [
+      {
+        "name": "wave",
+        "title": "Hey"
+      },
+      {
+        "name": "thumbs-up",
+        "title": "Thumbs up"
+      },
+      {
+        "name": "guitar",
+        "title": "Rock out"
+      },
+      {
+        "name": "gamer",
+        "title": "Gamer"
+      },
+      {
+        "name": "zen",
+        "title": "Zen mode"
+      },
+      {
+        "name": "balloon",
+        "title": "Party"
+      },
+      {
+        "name": "love",
+        "title": "Love it"
+      },
+      {
+        "name": "music",
+        "title": "Vibing"
+      }
+    ]
+  }
+}

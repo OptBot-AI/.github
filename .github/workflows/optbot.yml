@@ -1,0 +1,24 @@
+# OPTBOT bot: the robot reacts with the approved OPTBOT GIFs. The logic lives in
+# OptBot-AI/.github (.github/workflows/optbot-reactions.yml); this file only says when to call it.
+name: OPTBOT bot
+
+on:
+  issues:
+    types: [opened, closed]
+  pull_request_target:
+    types: [opened, closed]
+  pull_request_review:
+    types: [submitted]
+  issue_comment:
+    types: [created]
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  react:
+    uses: ./.github/workflows/optbot-reactions.yml

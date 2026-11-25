@@ -1,0 +1,73 @@
+# OPTBOT bot: the robot reacts across every OPTBOT repository with the approved GIFs.
+# Reusable: each repository calls this with a tiny caller (see workflow-templates/optbot-reactions.yml),
+# so changing this one file changes the bot everywhere.
+#
+#   issue opened      -> a "looking into it" GIF      issue closed        -> a win GIF
+#   pull request open -> an "on it" GIF               review approved     -> a love-it GIF
+#   changes requested -> a thinking GIF               pull request merged -> a ship-it GIF
+#   commit on main    -> a random GIF on the commit   "/optbot <name>"    -> that GIF ("/optbot random", "/optbot list")
+#
+# Add [skip optbot] to a commit message, PR title or issue title to keep the robot quiet.
+name: OPTBOT bot
+
+on:
+  workflow_call:
+
+jobs:
+  react:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const RAW = "https://raw.githubusercontent.com/OptBot-AI/.github/main/assets";
+            const REACTIONS = ["thumbs-up", "ship-it", "party", "trophy", "chart", "love", "laugh", "thinking", "idea", "shrug", "facepalm", "eyes", "on-it", "bug", "waiting", "coffee", "wave", "sleep", "hockey", "golf", "ping-pong", "chef", "basketball", "gym"];
+            const GIFS = ["classic", "blink", "wink", "happy", "side-eye", "focused", "shades", "heart-eyes", "star-eyes", "dizzy", "sleepy", "cap", "beanie", "crown", "top-hat", "headphones", "chef", "party-hat", "wizard", "grad", "halo", "antenna", "cowboy", "hockey", "hockey-celly", "golf-swing", "golf-putt", "basketball", "soccer", "tennis", "gym", "skate", "trophy", "laptop", "coffee", "chart", "detective", "idea", "launch", "support", "clipboard", "briefcase", "wave", "thumbs-up", "guitar", "gamer", "zen", "balloon", "love", "music"];
+            const url = n => REACTIONS.includes(n) ? `${RAW}/reactions/optbot-${n}.gif` : `${RAW}/gifs/optbot-${n}.gif`;
+            const pick = a => a[Math.floor(Math.random() * a.length)];
+            const card = (n, line) => `<img src="${url(n)}" height="96" alt="optbot ${n}"> ${line}`;
+            const POOLS = {
+              issueOpened:  [["eyes", "Looking into it."], ["thinking", "Thinking about it."], ["detective", "On the case."], ["focused", "Locked in."]],
+              issueClosed:  [["trophy", "Closed. Nice work."], ["party", "Done!"], ["thumbs-up", "Closed."], ["crown", "Closed like a king."]],
+              prOpened:     [["on-it", "Thanks! A code owner will review this."], ["coffee", "Grabbing a coffee and a look."], ["support", "On it. A code owner will review."], ["headphones", "Headphones on. Reviewing soon."]],
+              approved:     [["thumbs-up", "Approved."], ["love", "Love it. Approved."], ["heart-eyes", "Beautiful. Approved."], ["star-eyes", "Star work. Approved."]],
+              changes:      [["thinking", "A few changes first."], ["side-eye", "Almost. See the review."], ["detective", "Found a few things."]],
+              merged:       [["ship-it", "Merged. Shipped."], ["party", "Merged!"], ["golf", "Merged. Right down the middle."], ["hockey-celly", "Merged. Goal!"], ["basketball", "Merged. Nothing but net."], ["skate", "Merged and rolling."]],
+            };
+            const p = context.payload, ev = context.eventName, repo = context.repo;
+            const quiet = s => /\[skip optbot\]/i.test(s || "");
+            const comment = (n, [g, line]) => github.rest.issues.createComment({ ...repo, issue_number: n, body: card(g, line) });
+
+            if (ev === "issues") {
+              if (quiet(p.issue.title)) return;
+              if (p.action === "opened") return comment(p.issue.number, pick(POOLS.issueOpened));
+              if (p.action === "closed" && p.issue.state_reason === "completed") return comment(p.issue.number, pick(POOLS.issueClosed));
+            }
+            if (ev === "pull_request_target" || ev === "pull_request") {
+              const pr = p.pull_request; if (quiet(pr.title)) return;
+              if (p.action === "opened") return comment(pr.number, pick(POOLS.prOpened));
+              if (p.action === "closed" && pr.merged) return comment(pr.number, pick(POOLS.merged));
+            }
+            if (ev === "pull_request_review" && p.action === "submitted") {
+              const s = p.review.state;
+              if (s === "approved") return comment(p.pull_request.number, pick(POOLS.approved));
+              if (s === "changes_requested") return comment(p.pull_request.number, pick(POOLS.changes));
+            }
+            if (ev === "push") {
+              const c = p.head_commit; if (!c || quiet(c.message) || p.deleted) return;
+              const g = pick(GIFS);
+              return github.rest.repos.createCommitComment({ ...repo, commit_sha: c.id,
+                body: card(g, `Landed on \`${p.ref.replace("refs/heads/", "")}\`. Today's robot: **${g}**.`) });
+            }
+            if (ev === "issue_comment" && p.action === "created") {
+              if (p.comment.user.type === "Bot") return;
+              const m = (p.comment.body || "").trim().match(/^\/optbot\s+([a-z-]+)/i); if (!m) return;
+              let n = m[1].toLowerCase();
+              if (n === "list") return github.rest.issues.createComment({ ...repo, issue_number: p.issue.number,
+                body: "**OPTBOT reactions:** " + REACTIONS.map(x => "`" + x + "`").join(" ") + "\n\n**OPTBOT GIFs:** " + GIFS.map(x => "`" + x + "`").join(" ") + "\n\nUse `/optbot <name>` or `/optbot random`." });
+              if (n === "random") n = pick([...REACTIONS, ...GIFS]);
+              if (!REACTIONS.includes(n) && !GIFS.includes(n)) return;
+              await github.rest.reactions.createForIssueComment({ ...repo, comment_id: p.comment.id, content: "rocket" }).catch(() => {});
+              return github.rest.issues.createComment({ ...repo, issue_number: p.issue.number, body: card(n, `@${p.comment.user.login}`) });
+            }
