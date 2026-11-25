@@ -1,6 +1,8 @@
-# OptBot-AI/.github
-
-Organization-wide defaults for every OPTBOT repository.
+<!-- optbot:header -->
+<p align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/brand/optbot-lockup.png" height="48" alt="OPTBOT"></p>
+<h1 align="center">OptBot-AI/.github</h1>
+<p align="center"><b>Organization-wide defaults for every OPTBOT repository.</b></p>
+<!-- /optbot:header -->
 
 | File | Does |
 |---|---|
@@ -17,3 +19,7 @@ Organization-wide defaults for every OPTBOT repository.
 | `assets/` | Public brand images used in profiles and comments (reactions, avatars, banner, robot) |
 
 This repository is public so GitHub can show the profile and serve the images. Nothing confidential goes here.
+
+<!-- optbot:footer -->
+<br>
+<p align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/gifs/optbot-wave.gif" height="40" alt=""><br><sub><b>OPTBOT</b> · <a href="https://www.optbotai.com">optbotai.com</a> · Proprietary and confidential</sub></p>
