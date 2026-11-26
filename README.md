@@ -1,5 +1,5 @@
 <!-- optbot:header -->
-<p align="center"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/brand/optbot-lockup.png" height="48" alt="OPTBOT"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/brand/optbot-lockup-chalk.png"><img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/brand/optbot-lockup-ink.png" height="48" alt="OPTBOT"></picture></p>
 <h1 align="center">OptBot-AI/.github</h1>
 <p align="center"><b>Organization-wide defaults for every OPTBOT repository.</b></p>
 <!-- /optbot:header -->
