@@ -4,11 +4,11 @@
 
 <p align="center">
 <!-- optbot:gifs -->
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-grad.gif" height="110" alt="grad" title="grad">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-balloon.gif" height="110" alt="balloon" title="balloon">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-hockey.gif" height="110" alt="hockey" title="hockey">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-idea.gif" height="110" alt="idea" title="idea">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-guitar.gif" height="110" alt="guitar" title="guitar">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-music.gif" height="110" alt="music" title="music">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-party.gif" height="110" alt="party" title="party">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-chart.gif" height="110" alt="chart" title="chart">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-trophy.gif" height="110" alt="trophy" title="trophy">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-launch.gif" height="110" alt="launch" title="launch">
 <!-- /optbot:gifs -->
 </p>
 
