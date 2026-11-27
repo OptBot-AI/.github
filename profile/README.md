@@ -4,11 +4,11 @@
 
 <p align="center">
 <!-- optbot:gifs -->
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-music.gif" height="110" alt="music" title="music">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-party.gif" height="110" alt="party" title="party">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-ball-spin.gif" height="110" alt="ball-spin" title="ball-spin">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-chef.gif" height="110" alt="chef" title="chef">
 <img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-chart.gif" height="110" alt="chart" title="chart">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-trophy.gif" height="110" alt="trophy" title="trophy">
-<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-launch.gif" height="110" alt="launch" title="launch">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-hockey.gif" height="110" alt="hockey" title="hockey">
+<img src="https://raw.githubusercontent.com/OptBot-AI/.github/main/assets/tight/optbot-flip.gif" height="110" alt="flip" title="flip">
 <!-- /optbot:gifs -->
 </p>
 
